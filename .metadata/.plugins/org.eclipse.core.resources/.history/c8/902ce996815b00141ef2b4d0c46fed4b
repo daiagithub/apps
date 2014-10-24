@@ -1,0 +1,11 @@
+/asset/
+/dbdoc/
+/grails/
+/hibernate/
+/hibernate.cfg.xml
+/javascripts/
+/org/
+/spring/
+/uglifyjs/
+/AssetPipelineBootStrap$_closure1.class
+/AssetPipelineBootStrap.class

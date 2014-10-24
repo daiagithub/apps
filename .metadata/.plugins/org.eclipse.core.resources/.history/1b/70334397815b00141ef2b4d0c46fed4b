@@ -1,0 +1,14 @@
+/asset/
+/dbdoc/
+/grails/
+/hibernate/
+/hibernate.cfg.xml
+/javascripts/
+/org/
+/spring/
+/uglifyjs/
+/AssetPipelineBootStrap$_closure1.class
+/AssetPipelineBootStrap.class
+/AssetUrlMappings$__clinit__closure1.class
+/AssetUrlMappings.class
+/BootStrap$_closure1.class
