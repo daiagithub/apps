@@ -53,4 +53,11 @@ environments {
             }
         }
     }
+	
+	bees {
+        dataSource {
+			dbCreate = 'update'
+			jndiName = "java:comp/env/jdbc/inside-out"
+		}
+    }
 }
