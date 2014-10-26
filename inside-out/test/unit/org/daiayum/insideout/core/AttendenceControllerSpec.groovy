@@ -5,8 +5,8 @@ package org.daiayum.insideout.core
 import grails.test.mixin.*
 import spock.lang.*
 
-@TestFor(AttendenceController)
-@Mock(Attendence)
+@TestFor(AttendanceController)
+@Mock(Attendance)
 class AttendenceControllerSpec extends Specification {
 
     def populateValidParams(params) {
@@ -38,7 +38,7 @@ class AttendenceControllerSpec extends Specification {
         when:"The save action is executed with an invalid instance"
             request.contentType = FORM_CONTENT_TYPE
             request.method = 'POST'
-            def attendence = new Attendence()
+            def attendence = new Attendance()
             attendence.validate()
             controller.save(attendence)
 
@@ -49,14 +49,14 @@ class AttendenceControllerSpec extends Specification {
         when:"The save action is executed with a valid instance"
             response.reset()
             populateValidParams(params)
-            attendence = new Attendence(params)
+            attendence = new Attendance(params)
 
             controller.save(attendence)
 
         then:"A redirect is issued to the show action"
             response.redirectedUrl == '/attendence/show/1'
             controller.flash.message != null
-            Attendence.count() == 1
+            Attendance.count() == 1
     }
 
     void "Test that the show action returns the correct model"() {
@@ -68,7 +68,7 @@ class AttendenceControllerSpec extends Specification {
 
         when:"A domain instance is passed to the show action"
             populateValidParams(params)
-            def attendence = new Attendence(params)
+            def attendence = new Attendance(params)
             controller.show(attendence)
 
         then:"A model is populated containing the domain instance"
@@ -84,7 +84,7 @@ class AttendenceControllerSpec extends Specification {
 
         when:"A domain instance is passed to the edit action"
             populateValidParams(params)
-            def attendence = new Attendence(params)
+            def attendence = new Attendance(params)
             controller.edit(attendence)
 
         then:"A model is populated containing the domain instance"
@@ -104,7 +104,7 @@ class AttendenceControllerSpec extends Specification {
 
         when:"An invalid domain instance is passed to the update action"
             response.reset()
-            def attendence = new Attendence()
+            def attendence = new Attendance()
             attendence.validate()
             controller.update(attendence)
 
@@ -115,7 +115,7 @@ class AttendenceControllerSpec extends Specification {
         when:"A valid domain instance is passed to the update action"
             response.reset()
             populateValidParams(params)
-            attendence = new Attendence(params).save(flush: true)
+            attendence = new Attendance(params).save(flush: true)
             controller.update(attendence)
 
         then:"A redirect is issues to the show action"
@@ -136,16 +136,16 @@ class AttendenceControllerSpec extends Specification {
         when:"A domain instance is created"
             response.reset()
             populateValidParams(params)
-            def attendence = new Attendence(params).save(flush: true)
+            def attendence = new Attendance(params).save(flush: true)
 
         then:"It exists"
-            Attendence.count() == 1
+            Attendance.count() == 1
 
         when:"The domain instance is passed to the delete action"
             controller.delete(attendence)
 
         then:"The instance is deleted"
-            Attendence.count() == 0
+            Attendance.count() == 0
             response.redirectedUrl == '/attendence/index'
             flash.message != null
     }

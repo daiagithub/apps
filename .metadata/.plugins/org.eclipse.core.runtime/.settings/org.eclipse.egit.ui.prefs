@@ -1,0 +1,2 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>Initial commit</message>\r\n<message>Added properties for Attendance - timeIn, timeOut, recordDate,&\#x0A;dateCreated, dateModified.&\#x0A;Ran generate-all * </message>\r\n</messages>
+eclipse.preferences.version=1

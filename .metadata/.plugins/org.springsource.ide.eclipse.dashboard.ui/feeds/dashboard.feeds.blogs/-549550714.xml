@@ -5,7 +5,28 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2014-10-23T18:37:03Z</updated>
+  <updated>2014-10-25T21:54:00Z</updated>
+  <entry>
+    <title>Webinar Replay: Architecting for Continuous Delivery: Microservices with Pivotal CF and Spring Cloud</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/10/25/webinar-replay-architecting-for-continuous-delivery-microservices-with-pivotal-cf-and-spring-cloud" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-10-26:1796</id>
+    <updated>2014-10-25T21:54:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: Matt Stine, Pivotal&lt;/p&gt;
+
+&lt;p&gt; Join Matt Stine to hear how you can architect systems that are optimized for continuous delivery, allowing you to innovate and deliver value faster and safer. Microservices, Pivotal CF, and Spring Cloud combine to create an operationalized architecture that enables enterprises to continuously deliver value at scale through rapid, iterative development, and to meet the needs of a mobile-first world.&lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring Cloud: &lt;a href="http://projects.spring.io/spring-cloud"&gt;http://projects.spring.io/spring-cloud&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about Cloud Foundry: &lt;a href="http://cloudfoundry.org"&gt;http://cloudfoundry.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about Pivotal CF: &lt;a href="http://www.pivotal.io/platform-as-a-service/pivotal-cf"&gt;http://www.pivotal.io/platform-as-a-service/pivotal-cf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/vm8PcbcsYxU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
   <entry>
     <title>Spring AMQP 1.4 RC1 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2014/10/23/spring-amqp-1-4-rc1-released" />
@@ -1187,23 +1208,6 @@ Both tool suites ship on top of the latest Eclipse Luna 4.4 SR1 release as 64bit
 &lt;p&gt;Tuesday, Oct 21st, 2014 3:00PM BST (London GMT+01:00) &lt;a href="http://connect.pivotal.io/OSS_Webinar_MicroserviceswithPivotalCFandSpringCloud7AM_Register.html"&gt;Register&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Tuesday, Oct 21st, 2014 10:00AM PDT (San Francisco GMT-07:00) &lt;a href="http://connect.pivotal.io/OSS_Webinar_MicroserviceswithPivotalCFandSpringCloud10AM_Register.html"&gt;Register&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Webinar: Building “Bootful” UIs with Spring Boot and Vaadin</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/10/01/webinar-building-bootful-uis-with-spring-boot-and-vaadin" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-10-01:1777</id>
-    <updated>2014-10-01T01:20:00Z</updated>
-    <content type="html">&lt;p&gt;Speaker: Josh Long, Pivotal and Vaadin&lt;/p&gt;
-
-&lt;p&gt; It's been a long day, but you've done it: you've got a Spring Boot powered backend and now you need to build the UI that'll power the workforce and deliver next week. Vaadin, a UI framework that marries the ease of use of server-side Java and the rich, dynamic nature of client-side JavaScript, integrates well with Spring Boot and offers UI polish that would be hard to secure any other way. Join Spring developer advocate Josh Long and Vaadin evangelists for a look at how Vaadin and Spring Boot can get you to production quicker, and easier.&lt;/p&gt;
-
-&lt;p&gt;Thursday, October 23, 2014, 2014 3:00PM BST (London GMT+01:00) &lt;a href="http://connect.pivotal.io/OSS_Webinar_BuildingBootfulUIswithSpringBootandVaadin7AM_Register.html"&gt;Register&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Thursday, October 23, 2014 10:00AM PDT (San Francisco GMT-07:00) &lt;a href="http://connect.pivotal.io/OSS_Webinar_BuildingBootfulUIswithSpringBootandVaadin10AM_Register.html"&gt;Register&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
 

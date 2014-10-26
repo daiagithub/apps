@@ -6,7 +6,7 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(Attendence)
+@TestFor(Attendance)
 class AttendenceSpec extends Specification {
 
     def setup() {

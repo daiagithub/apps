@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.daiayum.insideout.core.Attendence&apos; to &apos;Attendance&apos;&#x0D;&#x0A;- Original project: &apos;inside-out&apos;&#x0D;&#x0A;- Original element: &apos;org.daiayum.insideout.core.Attendence&apos;&#x0D;&#x0A;- Renamed element: &apos;org.daiayum.insideout.core.Attendance&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Attendence&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/grails-app\/domain&lt;org.daiayum.insideout.core{Attendence.groovy[Attendence" matchStrategy="1" name="Attendance" qualified="false" references="true" similarDeclarations="false" stamp="1414158735768" textual="false" version="1.0"/>
+</session>
