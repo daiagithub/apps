@@ -1,7 +1,0 @@
-package org.daiayum.insideout.core
-
-class Attendence {
-
-    static constraints = {
-    }
-}
