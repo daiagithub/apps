@@ -4,6 +4,7 @@ class Attendance {
 	
 	Date timeIn
 	Date timeOut
+	String actualTimeSpent
 	Date recordDate
 	
 	Date dateCreated

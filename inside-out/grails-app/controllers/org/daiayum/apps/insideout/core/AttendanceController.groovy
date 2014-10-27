@@ -58,26 +58,39 @@ class AttendanceController {
     }
 	
 	@Transactional
-	def createNewAttendance() {
+	def record() {
 		
-		def attendanceInstance = attendanceService.createNewAttendance()
+		def attendanceInstance = attendanceService.recordAttendance()
 		
 		if(attendanceInstance)
 			respond attendanceInstance, [status: CREATED]
 		else
-			respond null, [status: ALREADY_REPORTED]
+			respond JSON.parse('[{"error":"Already reported."}]'), [status: ALREADY_REPORTED]		
+	}
 		
+	def elapsed() {
+		def attendanceInstance = Attendance.findByRecordDate(new Date().clearTime())
+				
+		if(attendanceInstance){
+			def elapsedTime = attendanceService.getElapsedTime(attendanceInstance)
+			respond JSON.parse('[{"elapsedTime": "' + elapsedTime + '"}]'), [status: OK]
+		}		
+		else{
+			respond JSON.parse('[{"error":"Not found."}]'), [status: NOT_FOUND]
+		}					
 	}
 	
 	@Transactional
-	def showElapsedTime() {
+	def out() {
 		def attendanceInstance = Attendance.findByRecordDate(new Date().clearTime())
-		def elapsedTime = attendanceService.elapsedTime(attendanceInstance)
-		
-		if(attendanceInstance)
-			respond JSON.parse('[{"elapsedTime": "' + elapsedTime + '"}]'), [status: OK]
-		else
-			respond null, [status: OK]		
+				
+		if(attendanceInstance){
+			attendanceInstance = attendanceService.recordOut(attendanceInstance)
+			respond attendanceInstance, [status: ACCEPTED]
+		}
+		else{
+			respond JSON.parse('[{"error":"Not found."}]'), [status: NOT_FOUND]
+		}
 	}
 
     def edit(Attendance attendanceInstance) {
