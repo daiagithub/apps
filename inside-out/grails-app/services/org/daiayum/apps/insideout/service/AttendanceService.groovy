@@ -14,8 +14,11 @@ class AttendanceService {
     }
 	
 	def recordAttendance(){
-		if(!Attendance.findByRecordDate(new Date().clearTime())){
-			def attendance = new Attendance(recordDate: new Date().clearTime(), timeIn: new Date(), actualTimeSpent: "00:00:00")
+		Calendar today = new GregorianCalendar();
+		today.setTimeZone(TimeZone.getTimeZone("Etc/UTC"));
+		
+		if(!Attendance.findByRecordDate(today.getTime().clearTime())){
+			def attendance = new Attendance(recordDate: today.getTime().clearTime(), timeIn: today.getTime(), actualTimeSpent: "00:00:00")
 			attendance.save()
 			return attendance
 		}else{
@@ -24,7 +27,9 @@ class AttendanceService {
 	}
 	
 	def recordOut(def attendance){
-		attendance.timeOut = new Date()
+		Calendar today = new GregorianCalendar();
+		today.setTimeZone(TimeZone.getTimeZone("Etc/UTC"));
+		attendance.timeOut = today.getTime()
 		
 		use(groovy.time.TimeCategory) {
 			def duration = attendance.timeOut - attendance.timeIn

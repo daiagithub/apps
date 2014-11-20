@@ -10,6 +10,10 @@ class Attendance {
 	Date dateCreated
 	Date lastUpdated
 
+	String timeZone;
+	
+	static transients =['timeZone']
+	
     static constraints = {
 		timeOut nullable:true 
     }
